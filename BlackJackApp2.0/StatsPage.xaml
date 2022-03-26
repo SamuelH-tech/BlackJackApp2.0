@@ -1,0 +1,57 @@
+﻿<Page x:Class="BlackJackApp2._0.StatsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:BlackJackApp2._0"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="StatsPage"
+      Background="White">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+            <RowDefinition Height="auto" />
+
+        </Grid.RowDefinitions>
+
+        <!--Row 0-->
+        <TextBlock Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" FontSize="24" Text="BlackJack App" VerticalAlignment="Center" HorizontalAlignment="Center" />
+       
+        <!-- row 1-->
+        <TextBlock Grid.Column="0" Grid.Row="1" FontSize="24" Text="Statistics" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.ColumnSpan="2"/>
+        <!-- row 2-->
+        <TextBlock Grid.Column="0" Grid.Row="2" FontSize="24" Text="Username:" VerticalAlignment="Center" Margin="5" HorizontalAlignment="Right"/>
+        <TextBox x:Name="txtUserName" Grid.Column="1" HorizontalAlignment="Left" Margin="5" Grid.Row="2" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" Height="30" IsEnabled="False"/>
+        <!-- row 3-->
+        <TextBlock Grid.Column="0" Grid.Row="3" FontSize="24" Text="Date Registered:" VerticalAlignment="Center" Margin="5" HorizontalAlignment="Right"/>
+        <TextBox x:Name="txtDateRegistered" Grid.Column="1" HorizontalAlignment="Left" Margin="5" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" Height="30" IsEnabled="False"/>
+        <!-- row 4-->
+        <TextBlock Grid.Column="0" Grid.Row="4" FontSize="24" Text="Last Login:" VerticalAlignment="Center" Margin="5" HorizontalAlignment="Right"/>
+        <TextBox x:Name="txtLastLogin" Grid.Column="1" HorizontalAlignment="Left" Margin="5" Grid.Row="4" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" Height="30" IsEnabled="False"/>
+        <!-- row 5-->
+        <TextBlock Grid.Column="0" Grid.Row="5" FontSize="24" Text="Hands Won:" VerticalAlignment="Center" Margin="5" HorizontalAlignment="Right"/>
+        <TextBox x:Name="txtHandsWon" Grid.Column="1" HorizontalAlignment="Left" Margin="5" Grid.Row="5" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" Height="30" IsEnabled="False"/>
+        <!-- row 6-->
+        <TextBlock Grid.Column="0" Grid.Row="6" FontSize="24" Text="Hands Lost:" VerticalAlignment="Center" Margin="5" HorizontalAlignment="Right"/>
+        <TextBox x:Name="txtHandsLost" Grid.Column="1" HorizontalAlignment="Left" Margin="5" Grid.Row="6" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" Height="30" IsEnabled="False"/>
+        <!-- row 7-->
+        <TextBlock Grid.Column="0" Grid.Row="7" FontSize="24" Text="Chips Won:" VerticalAlignment="Center" Margin="5" HorizontalAlignment="Right"/>
+        <TextBox x:Name="txtChipsWon" Grid.Column="1" HorizontalAlignment="Left" Margin="5" Grid.Row="7" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="250" Height="30" IsEnabled="False"/>
+        <!-- Row 8-->
+        <Button x:Name="btnBack" Content="Back" Margin="284,0,0,0" Grid.Row="8" HorizontalAlignment="Stretch" Grid.Column="0" Grid.ColumnSpan="2" ToolTip="Click to go back to the main menu" IsDefault="True" Click="BackClick" Height="48" VerticalAlignment="Stretch" Width="232"/>
+    </Grid>
+</Page>

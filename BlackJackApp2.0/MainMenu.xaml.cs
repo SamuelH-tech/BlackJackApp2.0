@@ -1,8 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -16,21 +14,33 @@ using System.Windows.Shapes;
 namespace BlackJackApp2._0
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for MainMenu.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class MainMenu : Page
     {
-        public MainWindow()
+        public MainMenu()
         {
             InitializeComponent();
-            MainMenu MainMenu = new MainMenu();
-            MainWindow.SetPage(MainMenu);
+           
+           
         }
-
         public static void SetPage(Page page)
         {
             MainWindow aWindow = Application.Current.MainWindow as MainWindow;
             aWindow.Content = page;
+        }
+
+        private void loginClick(object sender, RoutedEventArgs e)
+        {
+            //check credentials of user and if valid load the lobbies page.
+            LobbiesPage lobbies = new LobbiesPage();
+            MainWindow.SetPage(lobbies);
+        }
+
+        private void registerClick(object sender, RoutedEventArgs e)
+        {
+            RegisterPage register = new RegisterPage();
+            MainWindow.SetPage(register);
         }
     }
 }
