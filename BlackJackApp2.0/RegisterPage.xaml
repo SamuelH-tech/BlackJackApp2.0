@@ -27,25 +27,27 @@
         </Grid.RowDefinitions>
 
         <!-- Row 0 Controls -->
-        <Label Content="Username" HorizontalAlignment="Left" Margin="31,0,0,0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2"/>
+        <Label Content="Blackjack App" HorizontalAlignment="Center" VerticalAlignment="Center" Width="134" FontSize="20" Grid.Column="1" Grid.Row="0"/>
+        <Label Content="" x:Name="lblUserError" Foreground="Red" Grid.Column="0" HorizontalAlignment="Left" Margin="8,32,0,0" VerticalAlignment="Top" Width="329" Grid.Row="0" Height="54" Grid.ColumnSpan="2" Grid.RowSpan="2" />
+        <Label Content="Username" HorizontalAlignment="Center" Margin="31,0,0,0" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2"/>
         <TextBox x:Name="textBoxName" Grid.ColumnSpan="3" Margin="72,41,72,0" VerticalAlignment="Top" ToolTip="Enter the worker's name" Grid.Row="2" Grid.RowSpan="2"/>
 
         <!-- Row 1 Controls -->
 
         <!-- Row 2 Controls -->
-        <Label Content="Password" HorizontalAlignment="Left" Margin="33,24,0,0" VerticalAlignment="Top"  Grid.Row="3" Grid.Column="1" Grid.RowSpan="2"/>
+        <Label Content="Password" HorizontalAlignment="Center" Margin="33,24,0,0" VerticalAlignment="Top"  Grid.Row="3" Grid.Column="1" Grid.RowSpan="2"/>
         <TextBox x:Name="textBoxPassword" Grid.ColumnSpan="3" Margin="68,10,76,0" VerticalAlignment="Top" Grid.Row="4"/>
 
         <!-- Row 3 Controls -->
 
         <!-- Row 4 Controls -->
-        <Label Content="Confirm Password" HorizontalAlignment="Left" Margin="18,33,0,0" VerticalAlignment="Top" Grid.Row="4" Grid.Column="1" Grid.RowSpan="2"/>
-        <TextBox x:Name="textBoxConfirmPassword" Grid.ColumnSpan="3" Margin="67,19,76,0" VerticalAlignment="Top" Grid.Row="5" IsReadOnly="True"/>
+        <Label Content="Confirm Password" HorizontalAlignment="Center" Margin="18,33,0,0" VerticalAlignment="Top" Grid.Row="4" Grid.Column="1" Grid.RowSpan="2"/>
+        <TextBox x:Name="textBoxConfirmPassword" Grid.ColumnSpan="3" Margin="67,19,76,0" VerticalAlignment="Top" Grid.Row="5"/>
         <Label Content="Register" HorizontalAlignment="Center" Margin="0,16,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.Row="1" Grid.RowSpan="2" Width="66" FontSize="16"/>
-        <Label Content="Blackjack App" HorizontalAlignment="Center" VerticalAlignment="Center" Width="134" FontSize="20" Grid.Column="1"/>
+
 
         <!-- Row 5 Controls -->
-        <Button x:Name="btnRegisterSend" Content="Register" Margin="5,0,5,0" Grid.Row="6" Grid.Column="1" ToolTip="Click to Register" IsDefault="True" Click="registerClick" Height="42" VerticalAlignment="Bottom" />
+        <Button x:Name="btnRegisterSend" Content="Register" Margin="5,22,5,0" Grid.Row="6" Grid.Column="1" ToolTip="Click to Register" IsDefault="True" Click="registerClick" Height="42" VerticalAlignment="Top" />
 
 
 

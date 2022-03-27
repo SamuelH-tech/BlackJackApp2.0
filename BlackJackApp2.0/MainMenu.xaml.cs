@@ -24,6 +24,10 @@ namespace BlackJackApp2._0
            
            
         }
+        //variables
+        public static string currentUserName;
+        private string errorMessage;
+        private bool errorFlag;
         public static void SetPage(Page page)
         {
             MainWindow aWindow = Application.Current.MainWindow as MainWindow;
@@ -32,9 +36,39 @@ namespace BlackJackApp2._0
 
         private void loginClick(object sender, RoutedEventArgs e)
         {
+            //clear errors to avoid concatenating current error message
+            lblUserError.Content = "";
             //check credentials of user and if valid load the lobbies page.
-            LobbiesPage lobbies = new LobbiesPage();
-            MainWindow.SetPage(lobbies);
+
+            if (Textboxusername.Text.Length == 0)
+            {
+                errorMessage += "Please enter a Username. ";
+                errorFlag = true;
+                lblUserError.Content = errorMessage;
+            }
+            else if (Textboxpassword.Text.Length == 0)
+            {
+                errorMessage += "Please enter a Password. ";
+                errorFlag = true;
+                lblUserError.Content = errorMessage;
+            }
+
+            //there is entry in both textboxes. Check if valid
+            if(errorFlag == false)
+            {
+                //clear error box
+                lblUserError.Content = "";
+                //temporarily create a user while the database is not available.
+                User auser = new User(Textboxusername.Text, Textboxpassword.Text);
+                //use prepared statement / query database with entered values.
+                currentUserName = Textboxusername.Text;
+                LobbiesPage lobbies = new LobbiesPage();
+                MainWindow.SetPage(lobbies);
+                
+
+            }
+
+
         }
 
         private void registerClick(object sender, RoutedEventArgs e)

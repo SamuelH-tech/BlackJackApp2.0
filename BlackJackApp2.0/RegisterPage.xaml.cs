@@ -24,13 +24,57 @@ namespace BlackJackApp2._0
           
         }
 
+        string errorMessage;
+
         private void registerClick(object sender, RoutedEventArgs e)
         {
-            //create a new use class object
+            bool errorFlag = false;
+            //validate form
+            if(textBoxName.Text.Length == 0)
+            {
+                errorMessage += "Please enter a Username. ";
+                errorFlag = true;
+                lblUserError.Content = errorMessage;
+            }
+            else if(textBoxPassword.Text.Length == 0)
+            {
+                errorMessage += "Please enter a Password. ";
+                errorFlag = true;
+                lblUserError.Content = errorMessage;
+            }
+            else if (textBoxConfirmPassword.Text.Length == 0)
+            {
+                errorMessage += "Please confirm your password. ";
+                errorFlag = true;
+                lblUserError.Content = errorMessage;
+            }
 
-
-            MainMenu mainMenu = new MainMenu();
-            MainWindow.SetPage(mainMenu);
+            //ensure that the passwords match
+            if (errorFlag == false)
+            {
+                if(textBoxPassword.Text != textBoxConfirmPassword.Text)
+                {
+                    errorMessage += "Please match your passwords. ";
+                    errorFlag = true;
+                    lblUserError.Content = errorMessage;
+                }
+               
+            }
+            //form is good and the passwords match
+            if (errorFlag == false)
+            {
+                //instantiate a new user and add them to a list of users (for now).
+                User auser = new User(textBoxName.Text, textBoxPassword.Text);
+                //inform the user of success
+                MessageBox.Show("User Registered");
+                User.users.Add(auser);
+               //load game page after creating the user.
+                MainMenu mainMenu = new MainMenu();
+                MainWindow.SetPage(mainMenu);
+            }
+           
         }
+      
+      
     }
 }

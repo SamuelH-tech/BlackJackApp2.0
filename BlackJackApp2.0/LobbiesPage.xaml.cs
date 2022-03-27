@@ -21,6 +21,7 @@ namespace BlackJackApp2._0
         public LobbiesPage()
         {
             InitializeComponent();
+            lblUserName.Content = MainMenu.currentUserName;
         }
 
         private void Create_Game(object sender, RoutedEventArgs e)
@@ -28,5 +29,7 @@ namespace BlackJackApp2._0
             GamePage game = new GamePage();
             MainWindow.SetPage(game);
         }
+
+      
     }
 }

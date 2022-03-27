@@ -36,6 +36,7 @@
         </Grid.RowDefinitions>
         <!--Row 0-->
         <TextBlock Grid.Column="1" Grid.Row="0" FontSize="24" Text="BlackJack app" VerticalAlignment="Center" HorizontalAlignment="Center"/>
+        <Label Content="test" x:Name="lblUserError" Foreground="Red" Grid.Column="0" HorizontalAlignment="Left" Margin="8,32,0,0" VerticalAlignment="Top" Width="329" Grid.Row="0" Height="54" Grid.ColumnSpan="2" Grid.RowSpan="2" />
         <!--Row 1-->
 
         <TextBlock Grid.Column="1" Grid.Row="1" FontSize="30" Text="Login." VerticalAlignment="Center" HorizontalAlignment="Center"/>
@@ -44,11 +45,11 @@
         <TextBlock Grid.Column="1" Grid.Row="2" FontSize="30" Text="Username." VerticalAlignment="Center" HorizontalAlignment="Center"/>
 
         <!--Row 3-->
-        <TextBox x:Name="usernameText" Grid.Column="1" Grid.Row="3" Width="300"/>
+        <TextBox x:Name="Textboxusername" Grid.Column="1" Grid.Row="3" Width="300"/>
         <!--Row 4-->
         <TextBlock Grid.Column="1" Grid.Row="4" FontSize="30" Text="Password." VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <!--Row 5-->
-        <TextBox x:Name="passwordText" Grid.Column="1" Grid.Row="5" Width="300" />
+        <TextBox x:Name="Textboxpassword" Grid.Column="1" Grid.Row="5" Width="300" />
         <Button x:Name="btnLogin" Content="Login" Margin="5" Grid.Row="6" Grid.Column="1" ToolTip="Click to Login" IsDefault="True" Click="loginClick" />
         <TextBlock Grid.Column="1" Grid.Row="7" FontSize="24" Text="Haven't registered? Click Below!" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <Button x:Name="btnRegister" Content="Register" Margin="5,5,5,5" Grid.Row="8" Grid.Column="1" ToolTip="Click to Register" IsDefault="True" Click="registerClick" />
