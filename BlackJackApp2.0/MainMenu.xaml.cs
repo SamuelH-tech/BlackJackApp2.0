@@ -37,7 +37,8 @@ namespace BlackJackApp2._0
         private void loginClick(object sender, RoutedEventArgs e)
         {
             //clear errors to avoid concatenating current error message
-            // lblUserError.Content = "";
+            lblUserError.Content = "";
+            errorFlag = false;
             //check credentials of user and if valid load the lobbies page.
 
             if (Textboxusername.Text.Length == 0)

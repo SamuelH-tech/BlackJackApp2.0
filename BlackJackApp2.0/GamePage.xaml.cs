@@ -21,7 +21,8 @@ namespace BlackJackApp2._0
         public GamePage()
         {
             InitializeComponent();
-            lblUserName.Content = MainMenu.currentUserName;
+            // Just for now we will set the logged in user as user 1 as only 1 player can play atm.
+            User1.Content = MainMenu.currentUserName;
         }
     }
 }
