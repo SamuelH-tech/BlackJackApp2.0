@@ -27,7 +27,7 @@ namespace BlackJackApp2._0
         //variables
         public static string currentUserName;
         private string errorMessage;
-        private bool errorFlag;
+        private bool errorFlag = false;
         public static void SetPage(Page page)
         {
             MainWindow aWindow = Application.Current.MainWindow as MainWindow;
@@ -37,7 +37,7 @@ namespace BlackJackApp2._0
         private void loginClick(object sender, RoutedEventArgs e)
         {
             //clear errors to avoid concatenating current error message
-            lblUserError.Content = "";
+            // lblUserError.Content = "";
             //check credentials of user and if valid load the lobbies page.
 
             if (Textboxusername.Text.Length == 0)

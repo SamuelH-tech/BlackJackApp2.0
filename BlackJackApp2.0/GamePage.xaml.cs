@@ -21,6 +21,7 @@ namespace BlackJackApp2._0
         public GamePage()
         {
             InitializeComponent();
+            lblUserName.Content = MainMenu.currentUserName;
         }
     }
 }

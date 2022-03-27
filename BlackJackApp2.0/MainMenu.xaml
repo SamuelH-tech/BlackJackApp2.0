@@ -8,7 +8,7 @@
       d:DesignHeight="450" d:DesignWidth="800"
       Title="MainMenu"
       Background="White">
-     
+
 
 
 
@@ -50,7 +50,7 @@
         <TextBlock Grid.Column="1" Grid.Row="4" FontSize="30" Text="Password." VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <!--Row 5-->
         <TextBox x:Name="Textboxpassword" Grid.Column="1" Grid.Row="5" Width="300" />
-        <Button x:Name="btnLogin" Content="Login" Margin="5" Grid.Row="6" Grid.Column="1" ToolTip="Click to Login" IsDefault="True" Click="loginClick" />
+        <Button x:Name="btnLogin" Content="Login" Margin="5,5,5,0" Grid.Row="6" Grid.Column="1" ToolTip="Click to Login" IsDefault="True" Click="loginClick" Height="20" VerticalAlignment="Top" />
         <TextBlock Grid.Column="1" Grid.Row="7" FontSize="24" Text="Haven't registered? Click Below!" VerticalAlignment="Center" HorizontalAlignment="Center"/>
         <Button x:Name="btnRegister" Content="Register" Margin="5,5,5,5" Grid.Row="8" Grid.Column="1" ToolTip="Click to Register" IsDefault="True" Click="registerClick" />
 

@@ -18,8 +18,10 @@
             <RowDefinition Height="187*" />
             <RowDefinition Height="60*" />
         </Grid.RowDefinitions>
-
+        <!--row 0-->
+        <Label Content="" x:Name="lblUserName" Foreground="Red" Grid.Column="0" HorizontalAlignment="Left" Margin="8,32,0,0" VerticalAlignment="Top" Width="329" Grid.Row="0" Height="54" Grid.ColumnSpan="2" Grid.RowSpan="2" />
         <!-- Row 1 -->
+        
         <Image x:Name="PlayersCard4_Copy" HorizontalAlignment="Left" Height="97" Margin="353,50,0,0" VerticalAlignment="Top" Width="71" />
 
         <!-- row 2 -->
