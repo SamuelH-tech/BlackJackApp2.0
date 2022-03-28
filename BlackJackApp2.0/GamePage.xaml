@@ -14,13 +14,13 @@
         </Grid.ColumnDefinitions>
 
         <Grid.RowDefinitions>
-            <RowDefinition Height="187*" />
-            <RowDefinition Height="187*" />
-            <RowDefinition Height="60*" />
+            <RowDefinition Height="194*" />
+            <RowDefinition Height="171*" />
+            <RowDefinition Height="85*" />
         </Grid.RowDefinitions>
         <!--row 0-->
         <!-- Row 1 -->
-        
+
         <Image x:Name="PlayersCard4_Copy" HorizontalAlignment="Left" Height="97" Margin="353,50,0,0" VerticalAlignment="Top" Width="71" />
 
         <!-- row 2 -->
@@ -30,15 +30,16 @@
         <Image x:Name="PlayersCard4" HorizontalAlignment="Left" Height="97" Margin="499,30,0,0" VerticalAlignment="Top" Width="71" Grid.Row="1" />
 
         <!-- Row 3 -->
-        <Button Name="Hit" Content="Hit" HorizontalAlignment="Center" VerticalAlignment="Center" Width="94" Height="27" Grid.Row="2" Click="Hit_Click" />
-        <Button Name="Split" Content="Split" HorizontalAlignment="Left" Margin="254,0,0,0" VerticalAlignment="Center" Width="94" Height="27"  Grid.Row="2" Click="Split_Click" />
-        <Button Name="Stand" Content="Stand" Margin="452,0,254,0" VerticalAlignment="Center" Height="27" Grid.Row="2" Click="Stand_Click" />
+        <Button Name="Hit" Content="Hit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="94" Height="28" Grid.Row="2" Click="Hit_Click" Margin="452,10,0,0" />
+        <Button Name="Split" Content="Split" HorizontalAlignment="Left" Margin="254,24,0,0" VerticalAlignment="Top" Width="94" Height="28"  Grid.Row="2" Click="Split_Click" />
+        <Button Name="Stand" Content="Stand" Margin="452,47,254,0" VerticalAlignment="Top" Height="28" Grid.Row="2" Click="Stand_Click" />
 
-        <Label Name="User1" Content="UserName:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="204,123,0,0" VerticalAlignment="Top" Width="90" Grid.Row="1" />
-        <Label x:Name="User1_Copy" Content="UserName:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="299,123,0,0" VerticalAlignment="Top" Width="90" Grid.Row="1" />
-        <Label x:Name="User1_Copy1" Content="UserName:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="389,123,0,0" VerticalAlignment="Top" Width="90" Grid.Row="1" RenderTransformOrigin="1.101,0.734" />
-        <Label x:Name="User1_Copy2" Content="UserName:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="484,123,0,0" VerticalAlignment="Top" Width="90" Grid.Row="1" />
-        <Label x:Name="User1_Copy3" Content="Dealer&#xD;&#xA;" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="346,151,0,0" VerticalAlignment="Top" Width="90" />
+        <Label Name="User1" Content="UserName:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="204,123,0,0" VerticalAlignment="Top" Width="90" Grid.Row="1" Height="26" />
+        <Label x:Name="User1_Copy" Content="UserName:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="299,123,0,0" VerticalAlignment="Top" Width="90" Grid.Row="1" Height="26" />
+        <Label x:Name="User1_Copy1" Content="UserName:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="389,123,0,0" VerticalAlignment="Top" Width="90" Grid.Row="1" RenderTransformOrigin="1.101,0.734" Height="26" />
+        <Label x:Name="User1_Copy2" Content="UserName:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="484,123,0,0" VerticalAlignment="Top" Width="90" Grid.Row="1" Height="26" />
+        <Label x:Name="User1_Copy3" Content="Dealer&#xD;&#xA;" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="346,151,0,0" VerticalAlignment="Top" Width="90" Height="42" />
+        <Button x:Name="Deal" Content="Deal" HorizontalAlignment="Center" VerticalAlignment="Top" Width="94" Height="28" Grid.Row="2"  Margin="0,24,0,0" Click="Deal_Click" />
 
     </Grid>
 </Page>

@@ -39,5 +39,10 @@ namespace BlackJackApp2._0
         {
 
         }
+
+        private void Deal_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
