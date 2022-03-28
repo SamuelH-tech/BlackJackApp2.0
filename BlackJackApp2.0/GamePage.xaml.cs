@@ -25,6 +25,8 @@ namespace BlackJackApp2._0
             User1.Content = MainMenu.currentUserName;
         }
 
+        
+
         private void Split_Click(object sender, RoutedEventArgs e)
         {
 
@@ -42,7 +44,7 @@ namespace BlackJackApp2._0
 
         private void Deal_Click(object sender, RoutedEventArgs e)
         {
-
+            
         }
     }
 }
