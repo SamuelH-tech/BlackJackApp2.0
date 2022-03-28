@@ -12,15 +12,14 @@ namespace BlackJackApp2._0
         // Instance variables
         private string userName;
         private string userPassword;
-        private bool isValid = true;
         private DateTime dateRegistered;
         private DateTime lastAccess;
         private int handsWon;
         private int handsLost;
         private int chipsWon;
 
-
-        public static List<User> users = new List<User>();
+       //scrapped
+       //public static List<User> users = new List<User>();
       
         #endregion
 
@@ -37,7 +36,12 @@ namespace BlackJackApp2._0
             userName = nameValue;
             //set the user's password
             userPassword = passwordValue;
-            
+            dateRegistered = DateTime.Now;
+            lastAccess = DateTime.Now;
+            handsWon = 0;
+            handsLost = 0;
+            chipsWon = 0;
+
         }
 
         /// <summary>
@@ -50,7 +54,58 @@ namespace BlackJackApp2._0
 
         #endregion
 
-   
+        /// <summary>
+        /// Gets and sets a user's lastAccess
+        /// </summary>
+        /// <returns>an employee's name</returns>
+        public DateTime SetLastAccess
+        {   
+            set
+            {
+                lastAccess = DateTime.Now;
+            }
+        }
+        /// <summary>
+        /// Gets and sets a worker's name
+        /// </summary>
+        /// <returns>an employee's name</returns>
+        public int IncrementHandsWon
+        {
+            get
+            {
+                return handsWon;
+            }
+            set
+            {
+                handsWon = handsWon + 1;
+            }
+        }
+
+        public int IncrementHandsLost
+        {
+            get
+            {
+                return handsLost;
+            }
+            set
+            {
+                handsLost = handsLost + 1;
+            }
+        }
+        public int ChipsWon
+        {
+            get
+            {
+                return chipsWon;
+            }
+            set
+            {
+                chipsWon = chipsWon + value;
+            }
+        }
+
+
+
 
     }
 }

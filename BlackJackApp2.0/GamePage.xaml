@@ -30,9 +30,9 @@
         <Image x:Name="PlayersCard4" HorizontalAlignment="Left" Height="97" Margin="499,30,0,0" VerticalAlignment="Top" Width="71" Grid.Row="1" />
 
         <!-- Row 3 -->
-        <Button Name="Hit" Content="Hit" HorizontalAlignment="Center" VerticalAlignment="Center" Width="94" Height="27" Grid.Row="2" />
-        <Button Name="Split" Content="Split" HorizontalAlignment="Left" Margin="254,0,0,0" VerticalAlignment="Center" Width="94" Height="27"  Grid.Row="2" />
-        <Button Name="Stand" Content="Stand" Margin="452,0,254,0" VerticalAlignment="Center" Height="27" Grid.Row="2" />
+        <Button Name="Hit" Content="Hit" HorizontalAlignment="Center" VerticalAlignment="Center" Width="94" Height="27" Grid.Row="2" Click="Hit_Click" />
+        <Button Name="Split" Content="Split" HorizontalAlignment="Left" Margin="254,0,0,0" VerticalAlignment="Center" Width="94" Height="27"  Grid.Row="2" Click="Split_Click" />
+        <Button Name="Stand" Content="Stand" Margin="452,0,254,0" VerticalAlignment="Center" Height="27" Grid.Row="2" Click="Stand_Click" />
 
         <Label Name="User1" Content="UserName:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="204,123,0,0" VerticalAlignment="Top" Width="90" Grid.Row="1" />
         <Label x:Name="User1_Copy" Content="UserName:" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Margin="299,123,0,0" VerticalAlignment="Top" Width="90" Grid.Row="1" />

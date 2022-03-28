@@ -67,7 +67,7 @@ namespace BlackJackApp2._0
                 User auser = new User(textBoxName.Text, textBoxPassword.Text);
                 //inform the user of success
                 MessageBox.Show("User Registered");
-                User.users.Add(auser);
+               // User.users.Add(auser); commented out since this will be scrapped when database is added.
                //load game page after creating the user.
                 MainMenu mainMenu = new MainMenu();
                 MainWindow.SetPage(mainMenu);

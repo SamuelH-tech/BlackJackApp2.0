@@ -24,5 +24,20 @@ namespace BlackJackApp2._0
             // Just for now we will set the logged in user as user 1 as only 1 player can play atm.
             User1.Content = MainMenu.currentUserName;
         }
+
+        private void Split_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Hit_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Stand_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
